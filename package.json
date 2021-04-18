@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Shareable Renovate config",
   "keywords": [
-    "renovate"
+    "renovate",
+    "renovate-config"
   ],
   "homepage": "https://github.com/stardust-configs/renovate-config#readme",
   "bugs": "https://github.com/stardust-configs/renovate-config/issues",
