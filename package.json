@@ -18,30 +18,5 @@
   },
   "devDependencies": {
     "renovate": "^24.116.2"
-  },
-  "renovate-config": {
-    "default": {
-      "extends": [
-        "@stardust-configs:base"
-      ]
-    },
-    "base": {
-      "extends": [
-        ":separateMajorReleases",
-        ":combinePatchMinorReleases",
-        ":ignoreUnstable",
-        ":prImmediately",
-        ":semanticPrefixFixDepsChoreOthers",
-        ":updateNotScheduled",
-        ":automergeDisabled",
-        ":ignoreModulesAndTests",
-        ":autodetectPinVersions",
-        ":disableRateLimiting",
-        "group:monorepos",
-        "group:recommended",
-        "helpers:disableTypesNodeMajor",
-        "workarounds:all"
-      ]
-    }
   }
 }
