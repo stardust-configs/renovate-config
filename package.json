@@ -1,0 +1,48 @@
+{
+  "name": "renovate-config",
+  "version": "0.1.0",
+  "description": "Shareable Renovate config",
+  "keywords": [
+    "renovate"
+  ],
+  "homepage": "https://github.com/stardust-configs/renovate-config#readme",
+  "bugs": "https://github.com/stardust-configs/renovate-config/issues",
+  "license": "MIT",
+  "author": "P-Chan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stardust-configs/renovate-config.git"
+  },
+  "scripts": {
+    "test": "renovate-config-validator"
+  },
+  "devDependencies": {
+    "renovate": "^24.116.2"
+  },
+  "renovate-config": {
+    "default": {
+      "extends": [
+        "@stardust-configs:base"
+      ]
+    },
+    "base": {
+      "extends": [
+        ":separateMajorReleases",
+        ":combinePatchMinorReleases",
+        ":ignoreUnstable",
+        ":prImmediately",
+        ":semanticPrefixFixDepsChoreOthers",
+        ":updateNotScheduled",
+        ":automergeDisabled",
+        ":ignoreModulesAndTests",
+        ":autodetectPinVersions",
+        ":prHourlyLimit2",
+        ":prConcurrentLimit20",
+        "group:monorepos",
+        "group:recommended",
+        "helpers:disableTypesNodeMajor",
+        "workarounds:all"
+      ]
+    }
+  }
+}
