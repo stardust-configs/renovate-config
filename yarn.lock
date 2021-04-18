@@ -3780,7 +3780,7 @@ remark@^9.0.0:
     remark-stringify "^5.0.0"
     unified "^6.0.0"
 
-renovate@^24.116.2:
+renovate@24.116.2:
   version "24.116.2"
   resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.116.2.tgz#3e3a0d6328f6bd13870099881e5a56bf484b56c4"
   integrity sha512-aPvxcv1gJV+t8jiKXV5o6LQjgukr3YEWsy23yfnFcmv7EmBu/aLuDP4eoC3AdWavYDAriuu/UfOybmz2tNl/Tw==
@@ -4179,7 +4179,7 @@ ssri@^8.0.1:
   dependencies:
     minipass "^3.1.1"
 
-standard-version@^9.2.0:
+standard-version@9.2.0:
   version "9.2.0"
   resolved "https://registry.yarnpkg.com/standard-version/-/standard-version-9.2.0.tgz#d4e64b201ec1abb8a677b265d8755e5e8b9e33a3"
   integrity sha512-utJcqjk/wR4sePSwDoRcc5CzJ6S+kec5Hd0+1TJI+j1TRYuuptweAnEUdkkjGf2vYoGab2ezefyVtW065HZ1Uw==
