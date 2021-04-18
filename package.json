@@ -1,5 +1,5 @@
 {
-  "name": "renovate-config",
+  "name": "@stardust-configs/renovate-config",
   "version": "0.1.0",
   "description": "Shareable Renovate config",
   "keywords": [
