@@ -47,6 +47,59 @@
         "helpers:disableTypesNodeMajor",
         "workarounds:all"
       ]
+    },
+    "app": {
+      "extends": [
+        "@stardust-configs/renovate-config:base",
+        ":pinAllExceptPeerDependencies",
+        "schedule:weekly"
+      ],
+      "packageRules": [
+        {
+          "groupName": "devDependencies (non-major)",
+          "matchDepTypes": [
+            "devDependencies"
+          ],
+          "matchCurrentVersion": "!/^0/",
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ]
+        },
+        {
+          "groupName": "dependencies (non-major)",
+          "matchDepTypes": [
+            "dependencies"
+          ],
+          "matchCurrentVersion": "!/^0/",
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ]
+        }
+      ]
+    },
+    "lib": {
+      "extends": [
+        "@stardust-configs/renovate-config:base",
+        ":pinOnlyDevDependencies",
+        "schedule:monthly"
+      ],
+      "packageRules": [
+        {
+          "matchCurrentVersion": "!/^0/",
+          "matchUpdateTypes": [
+            "minor"
+          ]
+        },
+        {
+          "matchCurrentVersion": "!/^0/",
+          "matchUpdateTypes": [
+            "patch"
+          ],
+          "automerge": true
+        }
+      ]
     }
   }
 }
