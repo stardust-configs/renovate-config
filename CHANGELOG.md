@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/stardust-configs/renovate-config/compare/v0.1.0...v0.2.0) (2021-04-22)
+
+
+### Features
+
+* add some presets ([0c6056d](https://github.com/stardust-configs/renovate-config/commit/0c6056d1cb326af6caa08db648ce2ca54a92d249))
+
+
+### Bug Fixes
+
+* combine renovate configs ([dea7b07](https://github.com/stardust-configs/renovate-config/commit/dea7b07b8783710eb6ddb94b04e2105ee99be88e))
+* fix lib preset ([5929c74](https://github.com/stardust-configs/renovate-config/commit/5929c74c1e615bd55fce15409dc72b2f2b7a2b7f))
+
 ### [0.1.1](https://github.com/stardust-configs/renovate-config/compare/v0.1.0...v0.1.1) (2021-04-18)
 
 
