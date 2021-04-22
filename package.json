@@ -89,12 +89,7 @@
         {
           "matchCurrentVersion": "!/^0/",
           "matchUpdateTypes": [
-            "minor"
-          ]
-        },
-        {
-          "matchCurrentVersion": "!/^0/",
-          "matchUpdateTypes": [
+            "minor",
             "patch"
           ],
           "automerge": true
