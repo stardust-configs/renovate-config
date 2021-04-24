@@ -8,6 +8,7 @@ Edit `renovate.json`.
 
 ```json
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["@stardust-configs"]
 }
 ```
@@ -20,6 +21,7 @@ Edit `renovate.json`.
 
 ```json
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["@stardust-configs/renovate-config:base"]
 }
 ```
@@ -31,6 +33,7 @@ Edit `renovate.json`.
 
 ```json
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["@stardust-configs/renovate-config:app"]
 }
 ```
@@ -42,6 +45,7 @@ Edit `renovate.json`.
 
 ```json
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["@stardust-configs/renovate-config:lib"]
 }
 ```
