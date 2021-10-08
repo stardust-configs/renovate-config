@@ -40,8 +40,32 @@
       "extends": [
         "@stardust-configs/renovate-config:base",
         ":pinAllExceptPeerDependencies",
-        "schedule:weekly"
-      ],
+        "schedule:weekly",
+        "@stardust-configs/renovate-config:groupNonMajorDevDependencies",
+        "@stardust-configs/renovate-config:groupNonMajorDependencies"
+      ]
+    },
+    "lib": {
+      "extends": [
+        "@stardust-configs/renovate-config:base",
+        ":pinOnlyDevDependencies",
+        "schedule:monthly",
+        "@stardust-configs/renovate-config:automergeNonMajor"
+      ]
+    },
+    "automergeNonMajor": {
+      "packageRules": [
+        {
+          "matchCurrentVersion": "!/^0/",
+          "matchUpdateTypes": [
+            "minor",
+            "patch"
+          ],
+          "automerge": true
+        }
+      ]
+    },
+    "groupNonMajorDevDependencies": {
       "packageRules": [
         {
           "groupName": "devDependencies (non-major)",
@@ -53,7 +77,11 @@
             "minor",
             "patch"
           ]
-        },
+        }
+      ]
+    },
+    "groupNonMajorDependencies": {
+      "packageRules": [
         {
           "groupName": "dependencies (non-major)",
           "matchDepTypes": [
@@ -64,23 +92,6 @@
             "minor",
             "patch"
           ]
-        }
-      ]
-    },
-    "lib": {
-      "extends": [
-        "@stardust-configs/renovate-config:base",
-        ":pinOnlyDevDependencies",
-        "schedule:monthly"
-      ],
-      "packageRules": [
-        {
-          "matchCurrentVersion": "!/^0/",
-          "matchUpdateTypes": [
-            "minor",
-            "patch"
-          ],
-          "automerge": true
         }
       ]
     }
