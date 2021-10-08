@@ -40,7 +40,7 @@
       "extends": [
         "@stardust-configs/renovate-config:base",
         ":pinAllExceptPeerDependencies",
-        "schedule:weekly",
+        "schedule:monthly",
         "@stardust-configs/renovate-config:groupNonMajorDevDependencies",
         "@stardust-configs/renovate-config:groupNonMajorDependencies"
       ]
