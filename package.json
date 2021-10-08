@@ -32,8 +32,13 @@
     },
     "base": {
       "extends": [
-        "config:base",
-        ":disableRateLimiting"
+        ":semanticPrefixFixDepsChoreOthers",
+        ":ignoreModulesAndTests",
+        ":autodetectPinVersions",
+        ":disableRateLimiting",
+        "group:monorepos",
+        "group:recommended",
+        "workarounds:all"
       ]
     },
     "app": {
