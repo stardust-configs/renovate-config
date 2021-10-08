@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/stardust-configs/renovate-config/compare/v0.2.0...v0.3.0) (2021-10-08)
+
+
+### Features
+
+* add lib-node preset ([4021d52](https://github.com/stardust-configs/renovate-config/commit/4021d52319abf538c27b4038f424a49448184c0b))
+* change schedule in app preset to monthly ([77b732f](https://github.com/stardust-configs/renovate-config/commit/77b732f4d84a4710e088f9909e3acd25b5396c2c))
+* use renovate config:base ([55cd879](https://github.com/stardust-configs/renovate-config/commit/55cd879e3c4d0386a4cdc83549bc135c134fd852))
+
 ## [0.2.0](https://github.com/stardust-configs/renovate-config/compare/v0.1.0...v0.2.0) (2021-04-22)
 
 
