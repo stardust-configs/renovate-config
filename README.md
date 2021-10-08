@@ -6,30 +6,10 @@
 
 Edit `renovate.json`.
 
-```json
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["@stardust-configs"]
-}
-```
+<details>
+<summary><code>app</code> preset</summary>
 
-## Presets
-
-### `base` preset
-
-- Immediately update
-
-```json
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["@stardust-configs/renovate-config:base"]
-}
-```
-
-### `app` preset
-
-- Weekly update
-- Grouping devDependencies and dependencies
+> for Application
 
 ```json
 {
@@ -38,10 +18,16 @@ Edit `renovate.json`.
 }
 ```
 
-### `lib` preset
-
+- Pin all dependencies (Except peerDependencies)
 - Monthly update
-- Automerge non-major minor updates, non-major patch updates
+- Grouping non-major dependencies updates, non-major devDependencies updates
+
+</details>
+
+<details>
+<summary><code>lib</code> preset</summary>
+
+> for Library (Browser & Node.js)
 
 ```json
 {
@@ -49,3 +35,71 @@ Edit `renovate.json`.
   "extends": ["@stardust-configs/renovate-config:lib"]
 }
 ```
+
+- Pin only devDependencies
+- Monthly update
+- Automerge non-major updates
+
+</details>
+
+<details>
+<summary><code>lib-node</code> preset</summary>
+
+> for Library (Node.js)
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["@stardust-configs/renovate-config:lib-node"]
+}
+```
+
+- Pin all dependencies (Except peerDependencies)
+- Monthly update
+- Automerge non-major updates
+
+</details>
+
+## Override
+
+Override `renovate.json`.
+
+<details>
+<summary><code>label</code> preset</summary>
+
+```json
+{
+  "extends": [":label(dependencies)"]
+}
+```
+
+</details>
+
+<details>
+<summary><code>assignee</code> preset</summary>
+
+```json
+{
+  "extends": [":assignee(p-chan)"]
+}
+```
+
+</details>
+
+## FAQ
+
+### Why does each preset have a different target to pin?
+
+See [Should you Pin your JavaScript Dependencies?](https://docs.renovatebot.com/dependency-pinning/#so-whats-best).
+
+### Why does the non-major rules exclude v0.x?
+
+Because during `v0.x`, even non-major updates cause breaking changes.
+
+## Author
+
+[@p-chan](https://github.com/p-chan)
+
+## LICENSE
+
+MIT
