@@ -21,7 +21,7 @@
     "version:patch": "standard-version -r patch"
   },
   "devDependencies": {
-    "renovate": "27.25.0",
+    "renovate": "27.31.10",
     "standard-version": "9.3.2"
   },
   "renovate-config": {
