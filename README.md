@@ -14,7 +14,7 @@ Edit `renovate.json`.
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["@stardust-configs/renovate-config:app"]
+  "extends": ["github>stardust-configs/renovate-config:app"]
 }
 ```
 
@@ -32,7 +32,7 @@ Edit `renovate.json`.
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["@stardust-configs/renovate-config:lib"]
+  "extends": ["github>stardust-configs/renovate-config:lib"]
 }
 ```
 
@@ -43,14 +43,14 @@ Edit `renovate.json`.
 </details>
 
 <details>
-<summary><code>lib-node</code> preset</summary>
+<summary><code>libNode</code> preset</summary>
 
 > for Library (Node.js)
 
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["@stardust-configs/renovate-config:lib-node"]
+  "extends": ["github>stardust-configs/renovate-config:libNode"]
 }
 ```
 
