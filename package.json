@@ -27,5 +27,10 @@
     "prettier": "2.7.1",
     "renovate": "32.186.1",
     "standard-version": "9.5.0"
+  },
+  "standard-version": {
+    "scripts": {
+      "postchangelog": "prettier --write ./CHANGELOG.md"
+    }
   }
 }
