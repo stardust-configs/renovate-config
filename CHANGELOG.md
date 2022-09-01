@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/stardust-configs/renovate-config/compare/v0.4.0...v0.5.0) (2022-09-01)
+
+### Features
+
+- split configs ([09f981f](https://github.com/stardust-configs/renovate-config/commit/09f981fe6afcf7e12872e99a5a684acf6e81606e))
+
+### Bug Fixes
+
+- fix renovate config ([4208c95](https://github.com/stardust-configs/renovate-config/commit/4208c9507b883ba24de9a5672708335de63f2ac5))
+
 ## [0.4.0](https://github.com/stardust-configs/renovate-config/compare/v0.3.0...v0.4.0) (2021-10-08)
 
 ### Features
