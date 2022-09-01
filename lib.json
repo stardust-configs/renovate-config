@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>stardust-configs/renovate-config:base",
+    ":pinOnlyDevDependencies",
+    "schedule:monthly",
+    "github>stardust-configs/renovate-config:automergeNonMajor"
+  ]
+}
