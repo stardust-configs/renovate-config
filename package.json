@@ -25,7 +25,7 @@
   "devDependencies": {
     "@stardust-configs/prettier-config": "0.1.1",
     "prettier": "2.7.1",
-    "renovate": "32.211.0",
+    "renovate": "32.241.11",
     "standard-version": "9.5.0"
   },
   "standard-version": {
